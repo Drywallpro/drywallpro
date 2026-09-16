@@ -1,6 +1,6 @@
 # Images Directory
 
-This directory contains all images used on the Drywall Pro Services website.
+This directory contains all images used on the Drywall Pros Services website.
 
 ## Required Images
 

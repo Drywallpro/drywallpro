@@ -1,8 +1,8 @@
-# Drywall Pro Services - Website Improvements
+# Drywall Pros Services - Website Improvements
 
 ## Summary of Changes
 
-This document outlines all the improvements made to the Drywall Pro Services website.
+This document outlines all the improvements made to the Drywall Pros Services website.
 
 ### 1. Fixed Missing Images
 - Added SVG placeholder fallbacks for all images using `onerror` handlers
