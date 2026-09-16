@@ -1,0 +1,238 @@
+.subcontractor-intro {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.subcontractor-intro h2 {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 30px;
+}
+
+.subcontractor-intro p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: var(--dark-tertiary);
+    border: 1px solid var(--dark-tertiary);
+    border-radius: 8px;
+}
+
+.highlight i {
+    background: var(--primary-gold);
+    color: var(--dark-bg);
+    font-size: 1.5rem;
+}
+
+.highlight span {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.what-we-offer {
+    padding: 80px 0;
+    background: var(--dark-secondary);
+}
+
+.what-we-offer h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 60px;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.offer-card {
+    background: var(--dark-tertiary);
+    border: 1px solid var(--dark-tertiary);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-gold);
+}
+
+.offer-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-gold);
+    color: var(--dark-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 20px;
+}
+
+.offer-card h3 {
+    color: var(--primary-gold);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.offer-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.requirements {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.requirements h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 60px;
+}
+
+.requirements-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background: var(--dark-secondary);
+}
+
+.requirements-list,
+.preferred-skills {
+    background: var(--dark-tertiary);
+    border: 1px solid var(--dark-tertiary);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.requirements-list h3,
+.preferred-skills h3 {
+    color: var(--primary-gold);
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.requirements-list ul,
+.preferred-skills ul {
+    list-style: none;
+}
+
+.requirements-list li,
+.preferred-skills li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--text-muted);
+}
+
+.requirements-list i {
+    color: var(--success-green);
+    font-size: 1.2rem;
+}
+
+.preferred-skills i {
+    color: var(--primary-gold);
+    font-size: 1.2rem;
+}
+
+.application-process {
+    padding: 80px 0;
+    background: var(--dark-secondary);
+}
+
+.application-process h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 60px;
+}
+
+.application-form-section {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+}
+
+.form-container > p {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.application-form {
+    background: var(--dark-tertiary);
+    border: 1px solid var(--dark-tertiary);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .requirements-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .intro-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .application-form {
+        padding: 20px;
+    }
+
+    .requirements-list,
+    .preferred-skills {
+        padding: 20px;
+    }
+
+    .offer-card {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

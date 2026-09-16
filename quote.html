@@ -1,40 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request a Quote - Drywall Pro Services</title>
-    <meta name="description" content="Get a free quote for your drywall project from Calgary's trusted professionals. Fast, accurate estimates for all drywall services.">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="styles/main.css?v=2">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="images/gallery/icon.jpg" alt="Drywall Pro Services Logo">
-                <h2>Drywall Pro</h2>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="gallery.html" class="nav-link">Gallery</a>
-                <a href="safety.html" class="nav-link">Safety & Warranty</a>
-                <a href="subcontractors.html" class="nav-link">Subcontractors</a>
-                <a href="contact.html" class="nav-link">Contact Us</a>
-                <a href="quote.html" class="nav-link quote-btn active">Request A Quote</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
+---
+layout: default
+title: "Request a Quote - Drywall Pro Services"
+description: "Get a free quote for your drywall project from Calgary's trusted professionals. Fast, accurate estimates for all drywall services."
+styles: quote.css
+formspree_form: "#quoteForm"
+---
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
@@ -106,7 +76,7 @@
                         </select>
                         <span data-fs-error="projectType" class="fs-field-error"></span>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Services Needed * (Check all that apply)</label>
                         <div class="checkbox-group">
@@ -137,7 +107,7 @@
                             </label>
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="squareFootage">Approximate Square Footage</label>
@@ -162,7 +132,7 @@
                             </select>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="budget">Estimated Budget Range</label>
                         <select id="budget" name="budget">
@@ -174,7 +144,7 @@
                             <option value="over-20000">Over $20,000</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="description">Project Description *</label>
                         <textarea id="description" name="description" rows="6" placeholder="Please provide detailed information about your project, including rooms involved, specific requirements, and any special considerations..." required data-fs-field></textarea>
@@ -255,43 +225,3 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Drywall Pro Services</h3>
-                    <p>Professional drywall solutions for Calgary and surrounding areas since 2010.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Insulation</a></li>
-                        <li><a href="services.html">Drywall Installation</a></li>
-                        <li><a href="services.html">Taping</a></li>
-                        <li><a href="services.html">Texturing</a></li>
-                        <li><a href="services.html">Finish Painting</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-phone"></i> (403) 869-8605</p>
-                    <p><i class="fas fa-envelope"></i> canadadrywallpro@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Calgary, AB</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Drywall Pro Services. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scripts/main.js"></script>
-    <script>
-        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-        formspree('initForm', { formElement: '#quoteForm', formId: 'xlgwkvyo' });
-    </script>
-    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-</body>
-</html>

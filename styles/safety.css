@@ -1,0 +1,338 @@
+.safety-section {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.safety-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 30px;
+}
+
+.safety-section p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.safety-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.safety-feature {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.safety-feature i {
+    background: var(--primary-gold);
+    color: var(--dark-bg);
+    font-size: 2rem;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.safety-feature h4 {
+    color: var(--primary-gold);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.safety-feature p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.safety-protocols {
+    padding: 80px 0;
+    background: var(--dark-secondary);
+}
+
+.safety-protocols h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 60px;
+}
+
+.protocols-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.protocol-card {
+    background: var(--dark-tertiary);
+    border: 1px solid var(--dark-tertiary);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease;
+}
+
+.protocol-card:hover {
+    border-color: var(--primary-gold);
+}
+
+.protocol-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-gold);
+    color: var(--dark-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+}
+
+.protocol-card h3 {
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.protocol-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.protocol-card li {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.protocol-card li::before {
+    content: '•';
+    color: var(--primary-gold);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.warranty-section {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.warranty-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 30px;
+}
+
+.warranty-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.warranty-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.warranty-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-gold);
+    color: var(--dark-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.warranty-item h4 {
+    color: var(--primary-gold);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.warranty-item p {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.warranty-coverage {
+    padding: 80px 0;
+    background: var(--dark-secondary);
+}
+
+.warranty-coverage h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 60px;
+}
+
+.coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.coverage-card {
+    background: var(--dark-tertiary);
+    border: 1px solid var(--dark-tertiary);
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.coverage-card h3 {
+    color: var(--primary-gold);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.coverage-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.warranty-note {
+    background: var(--dark-tertiary);
+    padding: 40px;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-gold);
+}
+
+.warranty-note h3 {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.warranty-note ul {
+    list-style: none;
+}
+
+.warranty-note li {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.warranty-note li::before {
+    content: '→';
+    color: var(--primary-gold);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.insurance-licensing {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--dark-tertiary) 0%, var(--dark-secondary) 100%);
+    color: white;
+    position: relative;
+}
+
+.insurance-licensing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, var(--primary-gold) 0%, transparent 100%);
+    opacity: 0.05;
+}
+
+.insurance-licensing .container {
+    position: relative;
+    z-index: 2;
+}
+
+.insurance-licensing h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--primary-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.insurance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.insurance-card {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.insurance-card i {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+}
+
+.insurance-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+.insurance-card p {
+    opacity: 0.9;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .protocols-grid,
+    .coverage-grid,
+    .insurance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .safety-features,
+    .warranty-details {
+        gap: 20px;
+    }
+
+    .safety-feature,
+    .warranty-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .safety-feature i,
+    .warranty-item .warranty-icon {
+        align-self: center;
+    }
+
+    .warranty-note,
+    .protocol-card,
+    .coverage-card {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .protocols-grid,
+    .coverage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
