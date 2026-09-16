@@ -1,6 +1,6 @@
-# Drywall Pro Services Website
+# Drywall Pros Services Website
 
-Drywall Pro Services website, built as a [Jekyll](https://jekyllrb.com/) site and hosted on GitHub Pages at [drywallpros.ca](https://drywallpros.ca) (see `CNAME`).
+Drywall Pros Services website, built as a [Jekyll](https://jekyllrb.com/) site and hosted on GitHub Pages at [drywallpros.ca](https://drywallpros.ca) (see `CNAME`).
 
 ## Where things are
 
@@ -23,7 +23,7 @@ Front matter at the top of each `.html` file controls the page:
 ```yaml
 ---
 layout: default
-title: "Page Title - Drywall Pro Services"
+title: "Page Title - Drywall Pros Services"
 description: "Meta description for search engines."
 styles: pagename.css        # loads styles/pagename.css
 formspree_form: "#formId"   # optional, wires up a Formspree form on the page
