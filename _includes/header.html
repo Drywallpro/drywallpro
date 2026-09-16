@@ -1,0 +1,23 @@
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="images/gallery/icon.jpg" alt="Drywall Pro Services Logo">
+            <h2>Drywall Pro</h2>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}">Home</a>
+            <a href="about.html" class="nav-link{% if page.url == '/about.html' %} active{% endif %}">About Us</a>
+            <a href="services.html" class="nav-link{% if page.url == '/services.html' %} active{% endif %}">Services</a>
+            <a href="gallery.html" class="nav-link{% if page.url == '/gallery.html' %} active{% endif %}">Gallery</a>
+            <a href="safety.html" class="nav-link{% if page.url == '/safety.html' %} active{% endif %}">Safety & Warranty</a>
+            <a href="subcontractors.html" class="nav-link{% if page.url == '/subcontractors.html' %} active{% endif %}">Subcontractors</a>
+            <a href="contact.html" class="nav-link{% if page.url == '/contact.html' %} active{% endif %}">Contact Us</a>
+            <a href="quote.html" class="nav-link quote-btn{% if page.url == '/quote.html' %} active{% endif %}">Request A Quote</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>

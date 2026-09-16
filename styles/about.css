@@ -1,0 +1,194 @@
+/* Company Story */
+.company-story {
+    padding: 80px 0;
+    background: var(--dark-secondary);
+}
+
+.company-story h2 {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.company-story p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+/* Our Values */
+.our-values {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.our-values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.value-card {
+    background: var(--dark-tertiary);
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    border: 1px solid var(--dark-tertiary);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-gold);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.stat {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--dark-tertiary);
+    border-radius: 10px;
+    border: 1px solid var(--dark-tertiary);
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    border-color: var(--primary-gold);
+    transform: translateY(-5px);
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.stat p {
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* Commitment Section */
+.commitment {
+    padding: 80px 0;
+    background: var(--dark-secondary);
+}
+
+.commitment h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.commitment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.commitment-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--dark-tertiary);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.commitment-item:hover {
+    transform: translateY(-5px);
+}
+
+.commitment-item i {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+}
+
+.commitment-item h4 {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.commitment-item p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid,
+    .commitment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .values-grid,
+    .commitment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

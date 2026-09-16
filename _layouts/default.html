@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles/style.css">
+    {% if page.styles %}<link rel="stylesheet" href="styles/{{ page.styles }}">{% endif %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script src="scripts/main.js"></script>
+    {% if page.extra_scripts %}
+    {% for src in page.extra_scripts %}
+    <script src="{{ src }}"></script>
+    {% endfor %}
+    {% endif %}
+    {% if page.formspree_form %}
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '{{ page.formspree_form }}', formId: '{{ page.formspree_id | default: "xlgwkvyo" }}' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    {% endif %}
+</body>
+</html>

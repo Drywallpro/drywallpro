@@ -46,3 +46,12 @@ node_modules/
 # Temporary folders
 tmp/
 temp/
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Installers
+*.msi
