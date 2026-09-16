@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drywallpros.ca/sitemap.xml
