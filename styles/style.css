@@ -263,6 +263,16 @@ body.loaded {
     color: var(--text-muted);
 }
 
+.footer-bottom a {
+    color: var(--text-muted);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--primary-gold);
+}
+
 /* Page Header (banner used on every page except the homepage) */
 .page-header {
     margin-top: 80px;
