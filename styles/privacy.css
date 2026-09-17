@@ -1,0 +1,154 @@
+/* ── Content Container ── */
+.privacy-container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+    background: var(--dark-bg);
+    color: var(--text-muted);
+    line-height: 1.75;
+}
+
+.privacy-container p,
+.privacy-container li,
+.privacy-container span {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--text-muted);
+}
+
+.privacy-container p {
+    margin-bottom: 1rem;
+}
+
+.privacy-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--dark-secondary);
+}
+
+.privacy-container h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-top: 1.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.privacy-container strong {
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.privacy-container em {
+    font-style: italic;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.privacy-container a {
+    color: var(--primary-gold);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+    word-break: break-word;
+    font-weight: 600;
+}
+
+.privacy-container a:hover {
+    border-bottom-color: var(--primary-gold);
+}
+
+.privacy-container ul,
+.privacy-container ol {
+    margin: 0.75rem 0 1.5rem 1.5rem;
+    padding-left: 0.75rem;
+}
+
+.privacy-container li {
+    margin-bottom: 0.5rem;
+}
+
+.privacy-container ul li::marker {
+    color: var(--primary-gold);
+}
+
+/* ── Table of Contents ── */
+.privacy-container .toc {
+    background: var(--dark-secondary);
+    border-left: 4px solid var(--primary-gold);
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.privacy-container .toc li {
+    margin-bottom: 0.6rem;
+    line-height: 1.45;
+    color: var(--text-light);
+}
+
+.privacy-container .toc li::marker {
+    font-weight: 700;
+    color: var(--primary-gold);
+}
+
+.privacy-container .toc a {
+    color: var(--text-light);
+    border-bottom: none;
+    font-weight: 500;
+}
+
+.privacy-container .toc a:hover {
+    color: var(--primary-gold);
+}
+
+/* ── In-short callout ── */
+.privacy-container .in-short {
+    background: var(--dark-secondary);
+    border-left: 4px solid var(--primary-gold);
+    padding: 1rem 1.25rem;
+    margin: 1rem 0 1.5rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.privacy-container .in-short strong {
+    color: var(--text-light);
+}
+
+.privacy-container section {
+    scroll-margin-top: 100px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+
+    .privacy-container {
+        padding: 40px 20px 60px;
+    }
+
+    .privacy-container h2 {
+        font-size: 1.25rem;
+        margin-top: 2.25rem;
+    }
+
+    .privacy-container h3 {
+        font-size: 1.05rem;
+    }
+
+    .privacy-container .toc {
+        padding: 1rem 1rem 1rem 2.25rem;
+    }
+
+    .privacy-container ul,
+    .privacy-container ol {
+        margin-left: 1rem;
+    }
+}
