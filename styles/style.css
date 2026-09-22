@@ -507,6 +507,7 @@ body.loaded {
 }
 
 .checkbox-label {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -516,8 +517,13 @@ body.loaded {
 }
 
 .checkbox-label input[type="checkbox"] {
-    width: auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
     margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .checkmark {
@@ -526,12 +532,18 @@ body.loaded {
     border: 2px solid #ddd;
     border-radius: 3px;
     position: relative;
+    flex-shrink: 0;
     transition: all 0.3s ease;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark {
     background: var(--primary-gold);
     border-color: var(--primary-gold);
+}
+
+.checkbox-label input[type="checkbox"]:focus-visible + .checkmark {
+    outline: 2px solid var(--primary-gold);
+    outline-offset: 2px;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
