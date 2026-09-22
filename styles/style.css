@@ -506,7 +506,7 @@ body.loaded {
     margin-top: 10px;
 }
 
-.checkbox-label {
+.form-group .checkbox-label {
     position: relative;
     display: flex;
     align-items: center;
