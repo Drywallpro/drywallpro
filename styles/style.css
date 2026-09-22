@@ -233,12 +233,13 @@ body.loaded {
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .footer-section ul li a {
     color: var(--text-muted);
     text-decoration: none;
+    font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
@@ -249,6 +250,16 @@ body.loaded {
 .footer-section p {
     color: var(--text-muted);
     margin-bottom: 10px;
+}
+
+.footer-section p a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section p a:hover {
+    color: var(--primary-gold);
 }
 
 .footer-section i {
