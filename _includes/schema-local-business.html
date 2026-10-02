@@ -1,0 +1,47 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "@id": "{{ site.url }}/#business",
+  "name": "{{ site.title }}",
+  "description": "Commercial drywall contractor for builders and general contractors in Calgary and area, also serving homeowners. Family-owned since 2010.",
+  "url": "{{ site.url }}/",
+  "logo": "{{ site.logo | absolute_url }}",
+  "image": "{{ '/images/gallery/drywall-pros-logo-banner.jpeg' | absolute_url }}",
+  "telephone": "+1-403-869-8605",
+  "email": "info@drywallpros.ca",
+  "foundingDate": "2010",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Calgary",
+    "addressRegion": "AB",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Calgary" },
+    { "@type": "City", "name": "Airdrie" },
+    { "@type": "City", "name": "Cochrane" },
+    { "@type": "City", "name": "Okotoks" },
+    { "@type": "City", "name": "Chestermere" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "07:00",
+      "closes": "17:30"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Drywall Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Drywall Installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insulation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall Taping & Mudding" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall Texturing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finish Painting" } }
+    ]
+  }
+}
+</script>

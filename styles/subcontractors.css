@@ -34,9 +34,11 @@
 }
 
 .highlight i {
-    background: var(--primary-gold);
-    color: var(--dark-bg);
+    color: var(--primary-gold);
     font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .highlight span {

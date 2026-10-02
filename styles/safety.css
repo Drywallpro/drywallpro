@@ -29,9 +29,10 @@
 }
 
 .safety-feature i {
-    background: var(--primary-gold);
-    color: var(--dark-bg);
+    color: var(--primary-gold);
     font-size: 2rem;
+    width: 2.5rem;
+    text-align: center;
     margin-top: 5px;
     flex-shrink: 0;
 }

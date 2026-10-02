@@ -1,0 +1,23 @@
+title: Drywall Pros Services
+description: >-
+  Commercial drywall contractor serving Calgary builders since 2010. Insulation,
+  boarding, taping, texturing and painting. Free quotes: (403) 869-8605.
+url: https://drywallpros.ca
+logo: /images/gallery/drywall-pros-maple-leaf-icon.jpg
+locale: en_CA
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/gallery/drywall-pros-logo-banner.jpeg
+
+exclude:
+  - README.md
+  - IMPROVEMENTS.md
+  - images/README.md
+  - images/gallery/README.md
