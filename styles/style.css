@@ -815,3 +815,87 @@ select:focus {
         gap: 40px;
     }
 }
+
+/* Cookie Consent (vanilla-cookieconsent theme) */
+html #cc-main {
+    --cc-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --cc-modal-border-radius: 10px;
+    --cc-btn-border-radius: 5px;
+    --cc-modal-transition-duration: 0.3s;
+
+    --cc-bg: var(--dark-secondary);
+    --cc-primary-color: var(--text-light);
+    --cc-secondary-color: var(--text-muted);
+
+    --cc-btn-primary-bg: var(--primary-gold);
+    --cc-btn-primary-color: var(--dark-bg);
+    --cc-btn-primary-border-color: var(--primary-gold);
+    --cc-btn-primary-hover-bg: var(--accent-gold);
+    --cc-btn-primary-hover-color: var(--dark-bg);
+    --cc-btn-primary-hover-border-color: var(--accent-gold);
+
+    --cc-btn-secondary-bg: transparent;
+    --cc-btn-secondary-color: var(--primary-gold);
+    --cc-btn-secondary-border-color: var(--primary-gold);
+    --cc-btn-secondary-hover-bg: var(--primary-gold);
+    --cc-btn-secondary-hover-color: var(--dark-bg);
+    --cc-btn-secondary-hover-border-color: var(--primary-gold);
+
+    --cc-separator-border-color: var(--dark-tertiary);
+
+    --cc-toggle-on-bg: var(--primary-gold);
+    --cc-toggle-off-bg: var(--dark-tertiary);
+    --cc-toggle-on-knob-bg: var(--dark-bg);
+    --cc-toggle-off-knob-bg: var(--text-light);
+    --cc-toggle-enabled-icon-color: var(--dark-bg);
+    --cc-toggle-disabled-icon-color: var(--dark-tertiary);
+    --cc-toggle-readonly-bg: var(--accent-gold);
+    --cc-toggle-readonly-knob-bg: var(--dark-bg);
+    --cc-toggle-readonly-knob-icon-color: var(--accent-gold);
+
+    --cc-section-category-border: var(--dark-tertiary);
+    --cc-cookie-category-block-bg: var(--dark-bg);
+    --cc-cookie-category-block-border: var(--dark-tertiary);
+    --cc-cookie-category-block-hover-bg: #232323;
+    --cc-cookie-category-block-hover-border: var(--dark-tertiary);
+    --cc-cookie-category-expanded-block-bg: var(--dark-bg);
+    --cc-cookie-category-expanded-block-hover-bg: #232323;
+
+    --cc-overlay-bg: rgba(0, 0, 0, 0.7);
+    --cc-webkit-scrollbar-bg: var(--dark-tertiary);
+    --cc-webkit-scrollbar-hover-bg: var(--accent-gold);
+
+    --cc-footer-bg: var(--dark-bg);
+    --cc-footer-color: var(--text-muted);
+    --cc-footer-border-color: var(--dark-tertiary);
+}
+
+html #cc-main .cm,
+html #cc-main .pm {
+    border: 1px solid var(--primary-gold);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+html #cc-main .cm__title,
+html #cc-main .pm__title {
+    color: var(--primary-gold);
+}
+
+html #cc-main .cm__btn,
+html #cc-main .pm__btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-width: 2px;
+}
+
+html #cc-main a,
+html #cc-main .cc__link {
+    color: var(--primary-gold);
+    background-image: linear-gradient(currentColor, currentColor);
+}
+
+html #cc-main a:hover,
+html #cc-main .cc__link:hover {
+    color: var(--light-gold);
+}

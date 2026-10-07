@@ -152,3 +152,12 @@
         margin-left: 1rem;
     }
 }
+
+.privacy-container code {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--light-gold);
+    background: var(--dark-secondary);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+}
